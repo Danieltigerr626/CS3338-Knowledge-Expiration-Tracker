@@ -1,0 +1,19 @@
+version: '3.8'
+services:
+  frontend:
+    image: node:16
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./frontend:/app
+  backend:
+    image: node:16
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./backend:/app
+  db:
+    image: postgres:latest
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
