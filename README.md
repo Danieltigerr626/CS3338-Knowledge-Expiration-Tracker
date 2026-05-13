@@ -4,6 +4,7 @@
 # Jira Site: https://cs3338-group-30.atlassian.net/jira/software/projects/KET/summary
 
 Project Goals
+
 The Personal Knowledge Expiration Tracker is designed to address the "Forgetting Curve"—the natural decline of memory retention over time. In a fast-paced academic and professional environment, information is often lost shortly after it is acquired. This software matters because it transitions "temporary learning" into "permanent knowledge" by using automated reminders to prompt active recall at the exact moment a topic is likely to be forgotten.
 
 
