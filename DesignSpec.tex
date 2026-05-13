@@ -1,0 +1,52 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{Design Specification: Knowledge Expiration Tracker}
+\author{Daniel Yang, Chad Wong, Raymond Diep, William Lopez, Liam Peak}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\newpage
+
+\section{System Overview}
+The Knowledge Expiration Tracker is built using a containerized architecture to ensure consistency across development environments[cite: 1, 82]. The project utilizes a frontend-backend-database structure managed via Docker Compose[cite: 1, 82].
+
+\section{Frontend (Client-Side)}
+The frontend is developed using React.js to provide a responsive user interface for managing study schedules and flashcards[cite: 1, 86].
+\begin{itemize}
+    \item \textbf{Framework:} React.js [cite: 1, 86]
+    \item \textbf{UI Library:} Material UI (for responsive design and components) [cite: 1, 96]
+    \item \textbf{Core Dependencies:} react, react-dom, react-scripts [cite: 1, 88]
+\end{itemize}
+
+\section{Backend (Server-Side)}
+The backend handles the core logic for calculating knowledge expiration dates and managing user accounts[cite: 1, 101].
+\begin{itemize}
+    \item \textbf{Runtime:} Node.js [cite: 1, 102]
+    \item \textbf{Framework:} Express.js [cite: 1, 103]
+    \item \textbf{Core Dependencies:} express, body-parser, cors, dotenv [cite: 1, 105]
+\end{itemize}
+
+\section{Database}
+User data and knowledge items are stored in a relational database to maintain study history and scheduled intervals[cite: 1, 111].
+\begin{itemize}
+    \item \textbf{System:} PostgreSQL [cite: 1, 111]
+    \item \textbf{Library:} pg (node-postgres) [cite: 1, 111]
+\end{itemize}
+
+\section{Security and Authentication}
+Secure access to personal study data is managed through token-based authentication[cite: 1, 106].
+\begin{itemize}
+    \item \textbf{Tool:} jsonwebtoken (JWT) [cite: 1, 107]
+\end{itemize}
+
+\section{Infrastructure and Containerization}
+The entire stack is orchestrated using Docker to ensure all dependencies are correctly loaded in the production image[cite: 1, 82].
+\begin{itemize}
+    \item \textbf{Tool:} Docker Compose [cite: 1, 82]
+    \item \textbf{Package Manager:} npm [cite: 1, 99]
+\end{itemize}
+
+\end{document}
